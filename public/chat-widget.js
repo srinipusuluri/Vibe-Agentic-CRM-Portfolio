@@ -167,11 +167,10 @@
     typing.textContent = 'Thinking...';
     messagesContainer.appendChild(typing);
 
-    // Call OpenAI API
+    // Call OpenAI API via proxy
     fetch('http://localhost:3001/api/openai/chat/completions', {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${OPENAI_API_KEY}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
@@ -209,7 +208,4 @@
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
   }
 
-  // API Keys
-  const OPENAI_API_KEY = 'sk-proj-yi9YrlsD1EJ0O2EkQGkXT3BlbkFJ0REREM6bU4B40TEIY5xi';
-  const HF_API_TOKEN = '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';
 })();
