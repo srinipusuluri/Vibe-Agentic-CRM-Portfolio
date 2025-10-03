@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# Vibe Agentic CRM Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio website showcasing my expertise in AI, Salesforce, and CRM architecture. This site highlights my professional background, projects, and community contributions.
 
-## Available Scripts
+## 🌟 About This Project
 
-In the project directory, you can run:
+This is a modern, responsive portfolio website built with React and Node.js. It features an integrated AI chat widget powered by OpenAI's GPT model, demonstrating my work in AI-driven CRM solutions.
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Responsive Design**: Modern UI with gradient backgrounds and sleek animations
+- **Multi-Tab Navigation**: Explore different sections of my professional journey
+- **AI Chat Integration**: Real-time chat with OpenAI GPT-4o-mini model via a floating widget
+- **Project Galleries**: Carousel sliders showcasing SFDC projects, CPQ implementations, and AI use cases
+- **Community Training**: Overview of training areas in Salesforce and AI
+- **Link Integration**: Direct links to certifications, publications, and professional profiles
+- **Mobile Optimized**: Fully responsive across all devices
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+### Frontend
+- React 17+
+- CSS3 with gradient backgrounds and animations
+- Tailwind CSS (for chat widget)
+- JavaScript ES6+
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
+- Node.js
+- Express.js
+- CORS middleware
+- Environment variable management with dotenv
 
-### `npm run build`
+### APIs
+- OpenAI Chat Completions API
+- Hugging Face Inference API (fallback option)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📋 Sections
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Home**: Introduction to Agentic CRM vision with tagline and pillars
+2. **About Me**: Professional background with certification links and profile image
+3. **Portfolio**: Links to GitHub, LinkedIn, and publications
+4. **SFDC Projects**: Detailed showcase of Salesforce implementation projects
+5. **CPQ Projects**: Configure-Price-Quote solution deployments
+6. **AI Use Cases**: Comprehensive AI application scenarios in CRM
+7. **Community Trainings**: Training offerings in Salesforce and AI domains
+8. **Contact**: Contact information and additional links
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔧 Installation & Setup
 
-### `npm run eject`
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+- Git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Local Development
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/srinipusuluri/Vibe-Agentic-CRM-Portfolio.git
+   cd Vibe-Agentic-CRM-Portfolio
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Start the backend server**
+   ```bash
+   node server.js
+   ```
 
-## Learn More
+4. **In another terminal, start the React app**
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. **Open your browser to** `http://localhost:3002`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Note: React runs on port 3000 by default, but it will auto-increment to 3002 if 3000 is busy.
 
-### Code Splitting
+## 🚀 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Deploy to Render
 
-### Analyzing the Bundle Size
+1. **Push to GitHub** (follow instructions above)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Connect to Render**
+   - Create Web Service on Render
+   - Connect GitHub repository
+   - Set build command: `npm run build`
+   - Set start command: `npm start`
+   - Add environment variables:
+     - `OPENAI_API_KEY`: Your OpenAI API key
+     - `HF_API_TOKEN`: Your Hugging Face token (optional)
 
-### Making a Progressive Web App
+3. **Enjoy your live site!**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🤖 AI Chat Feature
 
-### Advanced Configuration
+The integrated chat widget uses OpenAI's GPT-4o-mini model through a secure backend proxy. This demonstrates:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Real-time AI interactions
+- Secure API key management
+- Frontend-backend integration
+- Error handling and user feedback
 
-### Deployment
+Try asking about CRM strategies or AI implementations!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📱 Responsive Design
 
-### `npm run build` fails to minify
+The website is fully responsive and optimized for:
+- Desktop computers
+- Tablets
+- Mobile devices
+- Different screen resolutions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🤝 Contributing
+
+While this is a personal portfolio, suggestions for improvements are welcome through GitHub issues.
+
+## 📄 License
+
+This project is private for personal use.
+
+## 📞 Contact
+
+Srini Pusuluri
+- Email: psrao.new@gmail.com
+- LinkedIn: [https://www.linkedin.com/in/pusulurisrinivasa/](https://www.linkedin.com/in/pusulurisrinivasa/)
+- GitHub: [https://github.com/srinipusuluri](https://github.com/srinipusuluri)
+
+---
+
+Built with ❤️ and powered by AI
