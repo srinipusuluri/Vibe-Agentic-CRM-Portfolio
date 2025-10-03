@@ -168,7 +168,6 @@ function App() {
         return (
           <div className="contact-content">
             <h1>Contact</h1>
-            <p>Email: psrao.new@gmail.com</p>
             <p>Education: M Tech IIT Kharagpur, Gen AI PG in Purdue</p>
             <p><a href="https://www.linkedin.com/in/pusulurisrinivasa/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
             <p>Purdue University Alumni</p>
