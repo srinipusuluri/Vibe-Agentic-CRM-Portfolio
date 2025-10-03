@@ -126,7 +126,6 @@ This project is private for personal use.
 ## 📞 Contact
 
 Srini Pusuluri
-- Email: psrao.new@gmail.com
 - LinkedIn: [https://www.linkedin.com/in/pusulurisrinivasa/](https://www.linkedin.com/in/pusulurisrinivasa/)
 - GitHub: [https://github.com/srinipusuluri](https://github.com/srinipusuluri)
 
