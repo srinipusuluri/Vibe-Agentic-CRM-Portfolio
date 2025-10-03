@@ -1,0 +1,46 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  outline: none;
+  transition: color 0.3s;
+}
+
+.nav-btn:hover {
+  color: #ffeb3b;
+}
+
+.slide {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  min-height: 200px;
+}
+
+.slide h2 {
+  margin-top: 0;
+  color: #ffeb3b;
+}
+
+.slide h3 {
+  color: #ffeb3b;
+}
+
+.slide p {
+  color: white;
+}

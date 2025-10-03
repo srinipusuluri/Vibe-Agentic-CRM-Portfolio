@@ -1,0 +1,60 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  outline: none;
+  transition: color 0.3s;
+}
+
+.nav-btn:hover {
+  color: #ffeb3b;
+}
+
+.carousel-content {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.slide h2 {
+  margin-top: 0;
+  color: #ffeb3b;
+}
+
+.slide h3 {
+  color: #ffeb3b;
+}
+
+.slide p {
+  color: white;
+}

@@ -1,38 +1,250 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+.app-header {
+  background: #1A1B1E;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  order: 2;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  order: 1;
+  flex: 1;
+}
+
+.nav-tabs.hidden {
+  display: none;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.tab-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.tab-button.active {
+  background: #667eea;
+  font-weight: bold;
+}
+
+.app-main {
+  flex: 1;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
   color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.about-content, .portfolio-content, .contact-content, .chat-content, .projects-content, .cpq-projects-content, .ai-usecases-content, .community-trainings-content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.model-selector {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.model-selector label {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.model-selector select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  min-width: 300px;
+}
+
+.app-main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.app-main a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.app-main a:hover {
+  color: #333;
+}
+
+.search-container {
+  display: flex;
+  margin: 40px 0;
+}
+
+.search-container input {
+  padding: 15px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  outline: none;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.search-container button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  background: #ff6b6b;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+
+.search-container button:hover {
+  background: #ff4757;
+}
+
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.search-link {
+  display: block;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+
+.search-link:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffeb3b;
+}
+
+.app-footer {
+  background: #333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-main {
+  flex: 3;
+}
+
+.footer-chat {
+  flex: 1;
+  order: 2;
+}
+
+.footer-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.footer-content ul {
+  text-align: left;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.footer-content li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .nav-tabs {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .tab-button {
+    width: 100%;
+    max-width: 200px;
+  }
+  .search-container {
+    flex-direction: column;
+  }
+  .search-container input {
+    border-radius: 50px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .search-container button {
+    border-radius: 50px;
+  }
+  .results-container {
+    flex-direction: column;
+  }
+  .about-content, .portfolio-content, .contact-content {
+    margin: 20px;
+    padding: 15px;
   }
 }
